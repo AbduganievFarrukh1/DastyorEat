@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="eatfresh.css" />
+    <script>
+      function stickyMenu() {
+        var sticky = document.getElementById("sticky");
+        if (window.pageYOffset > 220) {
+          sticky.classList.add("sticky");
+        } else {
+          sticky.classList.remove("sticky");
+        }
+      }
+
+      window.onscroll = function () {
+        stickyMenu();
+      };
+    </script>
+    <title>DastyorEat</title>
+  </head>
+
+  <body>
+    <div class="parallax">
+      <div class="page-title">DastyorEat</div>
+    </div>
+    <div class="menu" id="sticky">
+      <ul class="menu-ul">
+        <a href="#" class="a-menu"><li>Home</li></a>
+        <a href="#deals" class="a-menu"><li>Deals</li></a>
+        <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+        <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+        <a href="#meat" class="a-menu"><li>Meat</li></a>
+        <a href="#cart" class="a-menu"><li>Cart</li></a>
+      </ul>
+      <div class="search-box">
+        <form>
+          <input
+            type="text"
+            placeholder="Search..."
+            name="search"
+            class="search-input"
+          />
+        </form>
+      </div>
+    </div>
+    <!--Home Page Begins-->
+    <div class="container">
+      <a href="#vegetables">
+        <div class="categories">
+          <img src="images/greenpeper.jpg" class="item-image" />
+          <div class="image-title">Vegetables</div>
+        </div>
+      </a>
+      <a href="#fruits">
+        <div class="categories">
+          <img src="images/strawberry.jpg" class="item-image" />
+          <div class="image-title">Fruits</div>
+        </div>
+      </a>
+      <a href="#meat">
+        <div class="categories">
+          <img src="images/meat.jpg" class="item-image" />
+          <div class="image-title">Meat & Seafood</div>
+        </div>
+      </a>
+      <a href="#deals">
+        <div class="categories">
+          <img src="images/deals.jpg" class="item-image" />
+          <div class="image-title">Deals</div>
+        </div>
+      </a>
+    </div>
+    <!--Deal Begins Here-->
+    <div class="deals-container" id="deals">
+      <div class="parallax">
+        <div class="title">Deals</div>
+      </div>
+      <div class="deal">
+        Save 20% on min-purchase of 100zl on Vegetables <br\>
+        <Button class="coupon-btn"> Add Coupon</Button>
+      </div>
+      <div class="deal">
+        Save 10% on min-purchase of 150zl on Fruits <br\>
+        <Button class="coupon-btn"> Add Coupon</Button>
+      </div>
+      <div class="deal">
+        Save 15% on min-purchase of 200zl on Meat & Seafood <br\>
+        <Button class="coupon-btn"> Add Coupon</Button>
+      </div>
+    </div>
+    <!--Deal Ends Here-->
+    <!--Veg Begins Here-->
+    <div class="deals-container" id="vegetables">
+      <div class="parallax">
+        <div class="title">Vegetables</div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/carrotjpg.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Carrot</b><br/>
+          <div class="item-select">
+            Price : 1kg/15zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/greenpeper.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Organic Greenpepper</b><br/>
+          <div class="item-select">
+            Price : 1kg/25zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/tomato.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Organic Tomatoes</b><br/>
+          <div class="item-select">
+            Price : 1kg/18 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/onion.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Yellow Onions</b><br/>
+          <div class="item-select">
+            Price : 1kg/6zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/broccoli.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Broccoli</b><br/>
+          <div class="item-select">
+            Price : 1kg/30zl
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/cabbich.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Cabbage</b><br/>
+          <div class="item-select">
+            Price : 1kg/25zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Veg Ends Here-->
+     <!--Fruits Begins Here-->
+     <div class="deals-container" id="fruits">
+      <div class="parallax">
+        <div class="title">Fruits</div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/banana.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Banana</b><br/>
+          <div class="item-select">
+            Price : 1kg/10zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/kiwi.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Kiwi</b><br/>
+          <div class="item-select">
+            Price : 1kg/17zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/strawberry.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Strawberry</b><br/>
+          <div class="item-select">
+            Price : 1kg/35zl
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/watermelon.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Watermelon</b><br/>
+          <div class="item-select">
+            Price : 1kg/5zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/ananas.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Ananas</b><br/>
+          <div class="item-select">
+            Price : 1kg/40zl
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="items">
+        <div class="images">
+          <img src="images/apple.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+          <b>Apple</b><br/>
+          <div class="item-select">
+            Price : 1kg/8zl 
+          </div>
+          <label>Qty:</label>
+          <select class="item-select">
+          <option>250 grams</option>
+          <option>500 grams</option>
+          <option>750 grams</option>
+          <option>1 kg</option>
+        </select><br/>
+        <button class="buynow-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!--Fruits Ends Here-->
+        <!--Meat Begins Here-->
+        <div class="deals-container" id="meat">
+          <div class="parallax">
+            <div class="title">Meat & Seafood</div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images/chicken.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>Chicken</b><br/>
+              <div class="item-select">
+                Price : 1kg/13zl 
+              </div>
+              <label>Qty:</label>
+              <select class="item-select">
+              <option>250 grams</option>
+              <option>500 grams</option>
+              <option>750 grams</option>
+              <option>1 kg</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images/meat.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>Fresh Lamb</b><br/>
+              <div class="item-select">
+                Price : 1kg/30zl 
+              </div>
+              <label>Qty:</label>
+              <select class="item-select">
+              <option>250 grams</option>
+              <option>500 grams</option>
+              <option>750 grams</option>
+              <option>1 kg</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images/fish.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>Fish Tuna</b><br/>
+              <div class="item-select">
+                Price : 1kg/60zl
+              </div>
+              <label>Qty:</label>
+              <select class="item-select">
+              <option>250 grams</option>
+              <option>500 grams</option>
+              <option>750 grams</option>
+              <option>1 kg</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="items">
+            <div class="images">
+              <img src="images/shrimps.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+              <b>Shrimps</b><br/>
+              <div class="item-select">
+                Price : 1kg/35zl 
+              </div>
+              <label>Qty:</label>
+              <select class="item-select">
+              <option>250 grams</option>
+              <option>500 grams</option>
+              <option>750 grams</option>
+              <option>1 kg</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!--Meat Ends Here-->
+
+    <!--Home Page Ends-->
+    <!--footer starts here-->
+    <div class="parallax1">
+      <div class="footer">
+        <div class="quick-links">
+          <div>Locations</div>
+          <ul>
+            <li> <a href="" class="a-links">Address 1</a> </li>
+            <li> <a href="" class="a-links">Address 2</a> </li>
+            <li> <a href="" class="a-links">Address 3</a> </li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <div>Careers</div>
+          <ul>
+            <li> <a href="" class="a-links">Packing Staff</a> </li>
+            <li> <a href="" class="a-links">Delivery Agents</a> </li>
+            <li> <a href="" class="a-links">Shelf Fillers</a> </li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <div>Quik Links</div>
+          <ul>
+            <li> <a href="" class="a-links">Contact Us</a> </li>
+            <li> <a href="" class="a-links">FAQ</a> </li>
+            <li> <a href="" class="a-links">Help</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="copyrights">
+      <i class="far fa-opyright fa-1x"></i>^^^2021 by Web Developer(Farrukh Abduganiev)
+    </div>
+    <!--footer ends here-->
+  </body>
+</html>
